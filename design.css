@@ -1,0 +1,214 @@
+body {
+    background-color: #F5F5DD;
+}
+
+.full {
+    width: 100%;
+}
+
+.thirty {
+    float: left;
+    width: 30%;
+}
+
+.thirtythree {
+    float: left;
+    width: 30%;
+}
+
+.seventy {
+    float: left;
+    width: 70%;
+}
+
+.headeradj {
+    background-color: #AE6E4E;
+}
+
+.headertitle {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*items designs*/
+
+.categoryname {
+    color: #8B4411;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-top: 15px;
+}
+
+.itemimage {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.itemcard {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #AE6E4E;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.itemname {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.itemprice {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+}
+
+.leftmargintab {
+    margin-left: 20px;
+}
+
+.addcartbtn {
+    border: none;
+    border-radius: 8px;
+    background-color: #F5F5DD;
+    color: #8B4411;
+    display: block;
+    font-family: 411;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.3s;
+}
+
+.addcartbtn:hover {
+    color: white;
+    background-color: #a7916b;
+}
+
+
+/*customer detail designs*/
+
+.deliverydetails {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    padding: 8px;
+    padding-top: 18px;
+}
+
+.labeldesign {
+    color: white;
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 14px;
+}
+
+.inputdesign {
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 90%;
+}
+
+.orderdesign {
+    border: none;
+    border-radius: 5px;
+    background-color: #6e2217;
+    color: white;
+    margin-bottom: 15px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition-duration: 0.3s;
+}
+
+.orderdesign:hover {
+    background-color: #a74030;
+}
+
+.eightpadding {
+    padding-left: 8px;
+}
+
+ ::placeholder {
+    color: #b5b5b5;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+ ::-ms-input-placeholder {
+    color: #b5b5b5;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.icondesign {
+    margin-right: 5px;
+    width: 10%;
+}
+
+.totalpricelist {
+    border: 3px solid #6e2217;
+    background-color: white;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -16px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.addeditemdesign {
+    background-color: white;
+    border-top: 3px solid #6e2217;
+    border-left: 3px solid #6e2217;
+    border-right: 3px solid #6e2217;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.marginbox {
+    margin-right: 20px;
+    margin-left: -12px;
+}
+
+.addedpricedesign {
+    font-size: 12px;
+}
+
+.itemnamedesign {
+    color: #8B4411;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.itempricedesign {
+    font-family: 'Roboto', sans-serif;
+}
+
+.removebtn {
+    border-radius: 5px;
+    background-color: #6e2217;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}

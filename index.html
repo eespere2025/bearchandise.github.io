@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bears Merchandise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Kanit&family=Oswald&family=Pacifico&family=Poppins&family=Radio+Canada&family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+    <script src="function.js"></script>
+    <link rel="stylesheet" href="design.css">
+
+</head>
+
+<body>
+    <div class="column">
+        <div class="full headeradj">
+            <h1 class="headertitle">Bears Merchandise</h1>
+        </div>
+
+
+        <div class="full" style="margin-top: -8px;">
+            <div class="seventy ">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="keychain-tab" data-bs-toggle="tab" data-bs-target="#keychain" type="button" role="tab" aria-controls="keychain" aria-selected="true">Keychains</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bags-tab" data-bs-toggle="tab" data-bs-target="#bags" type="button" role="tab" aria-controls="bags" aria-selected="false">Bags</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="shirts-tab" data-bs-toggle="tab" data-bs-target="#shirts" type="button" role="tab" aria-controls="shirts" aria-selected="false">Shirts</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mugs-tab" data-bs-toggle="tab" data-bs-target="#mugs" type="button" role="tab" aria-controls="mugs" aria-selected="false">Mugs</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="keychain" role="tabpanel" aria-labelledby="keychain-tab">
+                        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+                            <h1 class="categoryname">Keychains</h1>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain1.png">
+                                    <label class="itemname">Keychains 1</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="kc1" onclick="AddKeychain1()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain2.png">
+                                    <label class="itemname">Keychains 2</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="kc2" onclick="AddKeychain2()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain3.png">
+                                    <label class="itemname">Keychains 3</label><br>
+                                    <p class="itemprice">Price: 50</p>
+                                    <button class="addcartbtn" type="button" id="kc3" onclick="AddKeychain3()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain4.png">
+                                    <label class="itemname">Keychains 4</label><br>
+                                    <p class="itemprice">Price: 10</p>
+                                    <button class="addcartbtn" type="button" id="kc4" onclick="AddKeychain4()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain5.png">
+                                    <label class="itemname">Keychains 5</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="kc5" onclick="AddKeychain5()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Keychains/keychain6.png">
+                                    <label class="itemname">Keychains 6</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="kc6" onclick="AddKeychain6()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="bags" role="tabpanel" aria-labelledby="bags-tab">
+                        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET ">
+                            <h1 class="categoryname">Bags</h1>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag1.png">
+                                    <label class="itemname">Bag 1</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="bag1" onclick="AddBag1()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag2.png">
+                                    <label class="itemname">Bag 2</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="bag2" onclick="AddBag2()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag3.png">
+                                    <label class="itemname">Bag 3</label><br>
+                                    <p class="itemprice">Price: 50</p>
+                                    <button class="addcartbtn" type="button" id="bag3" onclick="AddBag3()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag4.png">
+                                    <label class="itemname">Bag 4</label><br>
+                                    <p class="itemprice">Price: 10</p>
+                                    <button class="addcartbtn" type="button" id="bag4" onclick="AddBag4()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag5.png">
+                                    <label class="itemname">Bag 5</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="bag5" onclick="AddBag5()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Bags/bag6.png">
+                                    <label class="itemname">Bag 6</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="bag6" onclick="AddBag6()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="shirts" role="tabpanel" aria-labelledby="shirts-tab">
+                        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET ">
+                            <h1 class="categoryname">Shirts</h1>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt1.png">
+                                    <label class="itemname">Shirt 1</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="shirt1" onclick="AddShirt1()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt2.png">
+                                    <label class="itemname">Shirt 2</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="shirt2" onclick="AddShirt2()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt3.png">
+                                    <label class="itemname">Shirt 3</label><br>
+                                    <p class="itemprice">Price: 50</p>
+                                    <button class="addcartbtn" type="button" id="shirt3" onclick="AddShirt3()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt4.png">
+                                    <label class="itemname">Shirt 4</label><br>
+                                    <p class="itemprice">Price: 10</p>
+                                    <button class="addcartbtn" type="button" id="shirt4" onclick="AddShirt4()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt5.png">
+                                    <label class="itemname">Shirt 5</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="shirt5" onclick="AddShirt5()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Shirts/shirt6.png">
+                                    <label class="itemname">Shirt 6</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="shirt6" onclick="AddShirt6()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="mugs" role="tabpanel" aria-labelledby="mugs-tab">
+                        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET ">
+                            <h1 class="categoryname">Mugs</h1>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug1.png">
+                                    <label class="itemname">Mug 1</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="mug1" onclick="AddMug1()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug2.png">
+                                    <label class="itemname">Mug 2</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="mug2" onclick="AddMug2()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug3.png">
+                                    <label class="itemname">Mug 3</label><br>
+                                    <p class="itemprice">Price: 50</p>
+                                    <button class="addcartbtn" type="button" id="mug3" onclick="AddMug3()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                            <div class="row leftmargintab">
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug4.png">
+                                    <label class="itemname">Mug 4</label><br>
+                                    <p class="itemprice">Price: 10</p>
+                                    <button class="addcartbtn" type="button" id="mug4" onclick="AddMug4()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug5.png">
+                                    <label class="itemname">Mug 5</label><br>
+                                    <p class="itemprice">Price: 20</p>
+                                    <button class="addcartbtn" type="button" id="mug5" onclick="AddMug5()">Add to Cart</button><br>
+                                </div>
+                                <div class="thirtythree itemcard">
+                                    <img class="itemimage" src="Items/Mugs/mug6.png">
+                                    <label class="itemname">Mug 6</label><br>
+                                    <p class="itemprice">Price: 30</p>
+                                    <button class="addcartbtn" type="button" id="mug6" onclick="AddMug6()">Add to Cart</button><br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="thirty " style="background-color: #CC9767">
+                <h1 class="deliverydetails"><img class="icondesign" src="Items/OtherIcons/cart2.png">Cart</h1>
+                <div>
+                    <ul id="prodlist"></ul>
+                    <li class="totalpricelist">Total Price: <span id="totalprice">0</span></li>
+                </div>
+                <h1 class="deliverydetails"><img class="icondesign" src="Items/OtherIcons/delivery2.png">Delivery Details</h1>
+                <div class="eightpadding">
+                    <form action="http://sirjm.infinityfreeapp.com/checkout.php " method="GET ">
+                        <label class="labeldesign">Name</label><br>
+                        <input class="inputdesign" type="text" name="cust_name" placeholder="Firstname_Surname"><br><br>
+                        <label class="labeldesign">Email</label><br>
+                        <input class="inputdesign" type="text" name="cust_email" placeholder="user@gmail.com"><br><br>
+                        <label class="labeldesign">Delivery Address</label><br>
+                        <input class="inputdesign" type="text" name="cust_addr" placeholder="Country, Province, City, Street, Barangay"><br><br>
+                        <!--HIDDEN INPUT. SPECIAL CODE THAT FUNCTIONS-->
+                        <input type="hidden" name="cust_order" id="order">
+
+                        <button class="orderdesign" type="submit" onclick="OverallOrder()" id="Order">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

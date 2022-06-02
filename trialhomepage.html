@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Little</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <style>
+        .full {
+            width: 100%;
+        }
+        
+        .forty {
+            float: left;
+            width: 40%;
+        }
+        
+        .sixty {
+            float: left;
+            width: 60%;
+        }
+    </style>
+    <script>
+        var items = [];
+
+        function ItemList() {
+            document.getElementById('prodlist').value = "";
+            for (var i = 0; i < items.length; i++) {
+                document.getElementById('prodlist').innerHTML += '<li>' + '<p>Product 1</p>' + '</li>';
+            }
+            var prod_name = JSON.stringify(items);
+        }
+
+        function AddCart1() {
+            var firstitem = document.getElementById('item1').value;
+            items.push(firstitem);
+            ItemList();
+            document.getElementById('item1').value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Items</h1>
+    <div>
+        <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+            <label>Product 1</label><br>
+            <p>Price: 20</p>
+            <button type="button" id="item1" onclick="AddCart1()">Add to Cart</button><br>
+            <label>Product 2</label><br>
+            <p>Price: 30</p>
+            <button type="button" id="item2" onclick="AddCart2()">Add to Cart</button><br>
+            <label>Product 3</label><br>
+            <p>Price: 50</p>
+            <button type="button" id="item3" onclick="AddCart3()">Add to Cart</button><br>
+            <label>Product 4</label><br>
+            <p>Price: 10</p>
+            <button type="button" id="item4" onclick="AddCart4()">Add to Cart</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Total Price: <span id="totalprice">0</span></p>
+    </div>
+
+    <div class="row">
+        <div class="full">
+            <div class="forty">
+                <ul id="prodlist"></ul>
+
+                <script>
+                    ItemList();
+                </script>
+            </div>
+
+            <div class="sixty">
+                <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+                    <label>Name</label><br>
+                    <input type="text" name="cust_name" placeholder="Firstname_Surname"><br><br>
+                    <label>Email</label><br>
+                    <input type="text" name="cust_email" placeholder="user@gmail.com"><br><br>
+                    <label>Delivery Address</label><br>
+                    <input type="text" name="cust_addr" placeholder="Country, Province, City, Street, Barangay"><br><br>
+                    <button type="submit" id="Order">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
