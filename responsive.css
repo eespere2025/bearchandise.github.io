@@ -1,0 +1,115 @@
+@media only screen and (max-width: 850px) {
+    .addcartbtn {
+        font-size: 14px;
+    }
+    .itemcard {
+        padding-bottom: -5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .seventy {
+        width: 50%;
+    }
+    .thirty {
+        width: 50%;
+    }
+    .itemimage {
+        width: 80%;
+    }
+    .itemcard {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: #AE6E4E;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+    .thirtythree {
+        width: 90%;
+    }
+    .itemname {
+        margin-left: 30px;
+    }
+    .itemprice {
+        margin-left: 30px;
+    }
+    .addcartbtn {
+        font-size: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .leftmargintab {
+        margin-left: 12px;
+    }
+    .itemname {
+        font-size: 20px;
+    }
+    .itemprice {
+        font-size: 15px;
+    }
+    .addcartbtn {
+        font-size: 18px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .thirty {
+        width: 100%;
+    }
+    .seventy {
+        width: 100%;
+    }
+    .thirtythree {
+        width: 30%;
+    }
+    .itemimage {
+        width: 100%;
+    }
+    .itemname {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .itemprice {
+        font-size: 13px;
+        margin-left: 0px;
+    }
+    .addcartbtn {
+        font-size: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .addcartbtn {
+        font-size: 14px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .addcartbtn {
+        font-size: 13px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .thirtythree {
+        width: 80%;
+    }
+    .addcartbtn {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
